@@ -18147,7 +18147,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>问题 10 - 回答: 网关搜索是给定一组参数组合，穷举寻找最优参数的算法。网格搜索通过构建一个参数字典，遍历不同的参数组合，输入给分类器进行训练，采用交叉验证寻找评分最高的那一组参数，这一组参数即为给定参数范围内模型的最优参数组合。</p>
+<p>问题 10 - 回答: 网格搜索是给定一组参数组合，穷举寻找最优参数的算法。网格搜索通过构建一个参数字典，遍历不同的参数组合，输入给分类器进行训练，寻找评分最高的那一组参数，这一组参数即为给定参数范围内模型的最优参数组合。每个参数组合遍历的过程类似在每个网格里遍历搜索，因此叫做grid search。网格搜索经常也会结合交叉验证进行优化。网格搜索由于是遍历搜索，参数组合越多则耗时长的缺点会越明显。</p>
 
 </div>
 </div>
